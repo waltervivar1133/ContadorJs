@@ -37,4 +37,4 @@ const countdown = (deadline, elem, finalmessage) => {
   }, 1000)
 }
 
-countdown('Nov 07 2020 00:00:00 GMT-0500', 'clock', 'Hola bichita que haces?');
+countdown('Jan 07 2021 00:00:00 GMT-0500', 'clock', '¿Hola bichita que haces?');
