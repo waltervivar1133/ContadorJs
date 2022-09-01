@@ -1,26 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contador Vanilla</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-    integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-
+  <title> 💌 </title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
-  <main >
+ 
+  <main class="grid place-items-center h-screen w-full">
+    <div class="grid place-items-center " id="grid" style="display: none !important">
+      <div
+        class="max-w-sm bg-white rounded-lg border-2 border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+        <img class="rounded-t-lg"
+          src="https://firebasestorage.googleapis.com/v0/b/client-list-a370f.appspot.com/o/WhatsApp%20Image%202022-09-01%20at%204.44.31%20PM.jpeg?alt=media&token=c984192d-8080-4899-bc5e-bb56b4c704b1">
+        <div class="p-5">
+          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">¡Hola Amor de mi vida 😍!
+          </h5>
+          <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Esto es un contador y cada 3 de cada mes hasta el
+            fin de nuestras vidas habra
+            algo
+            nuevo que podras ver! espéralo con ansias!</p>
+          <div id="clock">
+          </div>
+        </div>
 
-    <div class="container-fluid  ">
-      <div class="media"></div>
-      <div class="container flex-center  ">
-        <div class="grid">
+        <!-- <div class="grid">
           <div class="card mb-3" style="max-width: 540px;">
             <div class="row no-gutters">
               <div class="col-md-4">
@@ -28,44 +36,87 @@
               </div>
               <div class="col-md-8">
                 <div class="card-body">
-                  <h5 class="card-title">Hola Chicuela 😍 </h5>
+                  <h5 class="card-title"></h5>
                   <p class="card-text">Esto es un contador y cada 7 de cada mes hasta el fin de nuestras vidas habra
                     algo
                     nuevo que podras ver! espéralo con ansias! </p>
-                  <div id="clock">
+                
                   </div>
                 </div>
               </div>
             </div>
+          </div> -->
+      </div>
+    </div>
+    
+    <div id="card" class="card" style="display: none !important">
+      <div class="grid grid-cols-2">
+        <div class="h-auto bg-cover bg-center"
+          style="background-image:url('https://firebasestorage.googleapis.com/v0/b/client-list-a370f.appspot.com/o/WhatsApp%20Image%202022-09-01%20at%204.42.26%20PM.jpeg?alt=media&token=5afd8117-4681-4bc6-89a7-120d531e56df');">
+        </div>
+        <div class="p-8">
+          <div class="mt-8 mb-8">
+            <h1 class="text-2xl font-black uppercase text-right mb-2">What is Lorem Ipsum?1</h1>
+            <p class="text-right">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
           </div>
         </div>
-
-        
-          <div id="card" class="card" style="display: none !important">
-            <div class="row">
-            <div class="col-md-4">
-              <img
-                src="https://drive.google.com/uc?id=1eCXu4X3s7OwCNHwzl1xrhtcvaBg2oOVw"
-                class="card-img">
-            </div>
-
-            <div class="col-md-8">
-              <div class="card-body p-4">
-                <h5 class="card-title">Hola Chicuela hermosa😍 </h5>
-                <p class="card-text ">Esto es un contador y cada 7 de cada mes hasta el fin de nuestras vidas habra algo
-                  nuevo que podras ver! espéralo con ansias!💓 <br>
-                  Hoy Es 7 de febrero y bueno hace dos años te pedi que fueramos enamorados recuerdas? ha pasado mucho tiempo no? quien pensaria que estariamos aun juntos o al menos haber pasado tantas cosas juntos, aventuras, viajes, comidas, juegos, llantos, malos ratos, buenos momentos, con sinceridad ha sido los mejores años de mi vida🥰, he empezado a comprenderme y entender mas de mí gracias a ti, porque ha sacado cosas que jamas habia conocido antes! eso de verdad me hace sentir tan bien, tan feliz, a pesar de que sea dificil lidiar conmigo, se que ire aprendiendo y mejorando poco a poco, se que estaremos mejor cada dia y lucharemos por mejorar amor por ser las mejores personas y enamorados del mundo, porque con sinceridad te amo mucho y jamas quiero perderte, gracias por compartir estos años conmigo🥰, espero que sigan siendo igual de lindos e igual de retadores cada dia, porque asi demostrare que te amo con todo mi corazón y que siempre te elegire a ti amor,
-                  escogi esta foto porque fue hace uff y realmente me recuerdo a esos dias donde todo era salir y trabajar juntos o al menos vernos super seguido, extraño mucho el antes, pero sabes? se que podremos hacer un futuro mejor solo debemos esforzarnos más y podremos hacerlo amor mio! 💓
-                <H1 class="title-final  text-center"> 💓FELICES 2 AÑOS AMOR MIO 💓</H1>
-              </div>
-            </div>
+      </div>
+      <div class="grid grid-cols-2">
+        <div class="p-8">
+          <div class="mt-8 mb-8">
+            <h1 class="text-2xl font-black uppercase text-left mb-2">What is Lorem Ipsum?2</h1>
+            <p class="text-left">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
           </div>
-
+        </div>
+        <div class="h-auto bg-cover bg-center"
+          style="background-image:url('https://firebasestorage.googleapis.com/v0/b/client-list-a370f.appspot.com/o/WhatsApp%20Image%202022-09-01%20at%204.42.57%20PM.jpeg?alt=media&token=397bf485-f8eb-47bb-b1b3-a53767cd1ad0');">
+        </div>
+      </div>
+      <div class="grid grid-cols-2">
+        <div class="h-auto bg-cover bg-center"
+          style="background-image:url('https://firebasestorage.googleapis.com/v0/b/client-list-a370f.appspot.com/o/WhatsApp%20Image%202022-09-01%20at%204.45.18%20PM.jpeg?alt=media&token=c8beb35c-7a99-4a9a-b79e-07eeb4e73161');">
+        </div>
+        <div class="p-8">
+          <div class="mt-8 mb-8">
+            <h1 class="text-2xl font-black uppercase text-right mb-2">What is Lorem Ipsum?3</h1>
+            <p class="text-right">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="grid grid-cols-2">
+        <div class="p-8">
+          <div class="mt-8 mb-8">
+            <h1 class="text-2xl font-black uppercase text-left mb-2">What is Lorem Ipsum?2</h1>
+            <p class="text-left">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+              scrambled it to make a type specimen book.
+            </p>
+          </div>
+        </div>
+        <div class="h-auto bg-cover bg-center"
+          style="background-image:url('https://firebasestorage.googleapis.com/v0/b/client-list-a370f.appspot.com/o/WhatsApp%20Image%202022-09-01%20at%204.54.18%20PM.jpeg?alt=media&token=564b53ad-c537-46c5-bd6b-3f0bc9d63377');">
         </div>
       </div>
     </div>
+    </div>
+   
 
-
+   
+    <div class="lds-ellipsis" id ="loader"><div></div><div></div><div></div><div></div></div>
+    
   </main>
 
   <script src="index.js"></script>

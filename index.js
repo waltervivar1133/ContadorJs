@@ -15,15 +15,10 @@ const getRemainTime = deadline => {
   }
 };
 
-
-
-
-
-
 const countdown = (deadline, elem, finalmessage) => {
   const el = document.getElementById(elem);
   const mensajeNuevo = document.getElementById('card');
-  const gridMensaje = document.querySelector('.grid')
+  const gridMensaje = document.getElementById('grid')
   const timerUpdate = setInterval(() => {
     let t = getRemainTime(deadline);
     el.innerHTML = `💝${t.remainDays}Días:${t.remainHours}h:${t.remainMinutes}m:${t.remainSeconds}s💝`;
@@ -33,8 +28,18 @@ const countdown = (deadline, elem, finalmessage) => {
       el.innerHTML = finalmessage;
       gridMensaje.style.display = 'none';
       mensajeNuevo.style.display = 'block';
+
+    }else {
+      gridMensaje.style.display = "grid"
     }
   }, 1000)
 }
 
-countdown('Feb 07 2021 00:00:00 GMT-0500', 'clock', '¿Hola bichita que haces?');
+countdown('Sep 3 2022 00:00:00 GMT-0500', 'clock', '¿Hola bichita que haces?');
+
+
+window.onload = function() {
+  let content = document.getElementById("loader");
+  content.style.visibility = "hidden";
+  content.style.opacity = "0"
+}
