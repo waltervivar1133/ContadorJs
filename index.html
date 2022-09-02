@@ -9,12 +9,12 @@
   <link rel="stylesheet" href="index.css">
 </head>
 
-<body>
- 
-  <main class="grid place-items-center h-screen w-full">
-    <div class="grid place-items-center " id="grid" style="display: none !important">
+<body class="">
+
+  <main class="grid place-items-center h-full md:h-screen md:w-full p-0 m-0">
+    <div class="grid place-items-center h-full md:w-screen" id="grid" style="display: none !important">
       <div
-        class="max-w-sm bg-white rounded-lg border-2 border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+        class="max-w-sm bg-white rounded-lg border-2 border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 m-3">
         <img class="rounded-t-lg"
           src="https://firebasestorage.googleapis.com/v0/b/client-list-a370f.appspot.com/o/WhatsApp%20Image%202022-09-01%20at%204.44.31%20PM.jpeg?alt=media&token=c984192d-8080-4899-bc5e-bb56b4c704b1">
         <div class="p-5">
@@ -48,7 +48,7 @@
           </div> -->
       </div>
     </div>
-    
+
     <div id="card" class="card" style="display: none !important">
       <div class="grid grid-cols-2">
         <div class="h-auto bg-cover bg-center"
@@ -112,11 +112,16 @@
       </div>
     </div>
     </div>
-   
 
-   
-    <div class="lds-ellipsis" id ="loader"><div></div><div></div><div></div><div></div></div>
-    
+
+
+    <div class="lds-ellipsis hidden md:flex" id="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
   </main>
 
   <script src="index.js"></script>

@@ -349,7 +349,7 @@ template {
 }
 
 
-body{
+main,body{
   background-image: linear-gradient(to right top, #92a09e, #95b0aa, #99c1b4, #9fd1bc, #a8e1c2);
   background-repeat: no-repeat;
   background-size: cover;
