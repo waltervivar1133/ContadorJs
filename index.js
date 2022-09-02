@@ -34,7 +34,7 @@ const countdown = (deadline, elem, finalmessage) => {
   }, 1000);
 };
 
-countdown("Sep 03 2022 00:00:00 GMT-0500", "clock", "¿Hola amor que haces?");
+countdown("Sep 01 2022 00:00:00 GMT-0500", "clock", "¿Hola amor que haces?");
 
 window.onload = function () {
   let content = document.getElementById("loader");
